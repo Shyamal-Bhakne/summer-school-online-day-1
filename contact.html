@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+</head>
+<body>
+  <header>
+    <h1>Contact Me</h1>
+    <nav>
+      <ul>
+        <li><a href="portfolio.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form action="#" method="POST">
+      <fieldset>
+        <legend>Your Info</legend>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <p>Preferred Contact Method:</p>
+        <input type="checkbox" id="emailOpt" name="contactPref" value="Email"> <label for="emailOpt">Email</label>
+        <input type="checkbox" id="phoneOpt" name="contactPref" value="Phone"> <label for="phoneOpt">Phone</label>
+        <input type="checkbox" id="textOpt" name="contactPref" value="Text"> <label for="textOpt">Text</label>
+
+        <p>Type of Inquiry:</p>
+        <input type="radio" id="general" name="inquiryType" value="General" checked> <label for="general">General</label>
+        <input type="radio" id="business" name="inquiryType" value="Business"> <label for="business">Business</label>
+        <input type="radio" id="support" name="inquiryType" value="Support"> <label for="support">Support</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Details</legend>
+        <label for="date">Preferred Contact Date:</label>
+        <input type="date" id="date" name="contactDate"><br><br>
+
+        <label for="service">Select Service:</label>
+        <select id="service" name="service" required>
+          <option value="">--Select--</option>
+          <option value="consulting">Consulting</option>
+          <option value="design">Design Review</option>
+          <option value="training">Training</option>
+        </select><br><br>
+
+        <label for="urgency">Urgency Level:</label>
+        <input type="range" id="urgency" name="urgency" min="1" max="10">
+      </fieldset>
+
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Shyamal Bhakne</p>
+  </footer>
+</body>
+</html>
+
+---
